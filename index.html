@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Final Project</title>
+    <meta name="description" content="My Final Profect">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Sport club members</h1>
+    </header>
+
+    <section class="hero">
+        <aside>
+            <!-- <section class="info-card">
+                <div class="card-top">
+                    <div class="initial">D</div>
+                    <div class="person-info">
+                        <p>John Doe Samuel</p>
+                        <p>ID: 5634645</p>
+                        <p>john.doe@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </section> -->
+
+            <!-- <section class="info-card">
+                <div class="card-top">
+                    <div class="initial">D</div>
+                    <div class="person-info">
+                        <p>John Doe Samuel</p>
+                        <p>ID: 5634645</p>
+                        <p>john.doe@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </section> -->
+
+            <!-- <section class="info-card">
+                <div class="card-top">
+                    <div class="initial">D</div>
+                    <div class="person-info">
+                        <p>John Doe Samuel</p>
+                        <p>ID: 5634645</p>
+                        <p>john.doe@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </section> -->
+
+
+            <!-- <section class="info-card">
+                <div class="card-top">
+                    <div class="initial">D</div>
+                    <div class="person-info">
+                        <p>John Doe Samuel</p>
+                        <p>ID: 5634645</p>
+                        <p>john.doe@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </section> -->
+
+            <!-- <section class="info-card">
+                <div class="card-top">
+                    <div class="initial">D</div>
+                    <div class="person-info">
+                        <p>John Doe Samuel</p>
+                        <p>ID: 5634645</p>
+                        <p>john.doe@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </section> -->
+
+            <!-- <section class="info-card">
+                <div class="card-top">
+                    <div class="initial">D</div>
+                    <div class="person-info">
+                        <p>John Doe Samuel</p>
+                        <p>ID: 5634645</p>
+                        <p>john.doe@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </section> -->
+
+        </aside>
+        <section class="left-part">
+
+            <div class="toast-red">
+                <p><span>&#10006;</span>&nbsp&nbsp Error While updating member. <p class="nameReas">Reason(s): <span
+                            class="reasons"></span></p>
+                </p>
+            </div>
+
+            <div class="toast-green" id="toast-green">
+                <p><span>&#10004;</span>&nbsp&nbsp User saved successfully. <br /> &nbsp Please wait <span
+                        class="sec">5</span> sec!</p>
+            </div>
+
+            <section class="add-member">
+                <h2>Add new member</h2>
+                <form target="_self" id="firstForm">
+                    <section class="first-last">
+                        <div>
+                            <label for="fname">First name</label>
+                            <input autocomplete="off" required type="text" id="fname" name="fname">
+                        </div>
+                        <div>
+                            <label for="lname">Last name</label>
+                            <input autocomplete="off" required type="text" id="lname" name="lname">
+                        </div>
+                    </section>
+
+                    <section class="address first-last">
+                        <div>
+                            <label for="address">Address</label>
+                            <input autocomplete="off" required type="text" id="address" name="address">
+                        </div>
+
+                        <div>
+                            <label for="zip">Zip code</label>
+                            <input autocomplete="off" required type="text" id="zip" name="zip">
+                        </div>
+
+                        <div>
+                            <label for="city">City</label>
+                            <input autocomplete="off" required type="text" id="city" name="city">
+                        </div>
+
+                        <div>
+                            <label for="country">Country</label>
+                            <input autocomplete="off" required type="text" id="country" name="country">
+                        </div>
+                    </section>
+
+                    <section class="gender-age first-last">
+                        <div>
+                            <label for="gender">Gender</label>
+                            <select required id="gender" name="gender">
+                                <option value="" selected disabled hidden>Choose here</option>
+                                <option class="genderAdd" value="female">female</option>
+                                <option class="genderAdd" value="male">male</option>
+                                <option class="genderAdd" value="not specified">not specified</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="fname">Age</label>
+                            <input autocomplete="off" required type="number" id="age" name="age">
+                        </div>
+
+                        <div>
+                            <label>Activity class</label>
+                            <fieldset>
+                                <input checked class="activityAdd" type="radio" id="professional" name="activity"
+                                    value="professional">
+                                <label id="professionalLabel" for="professional">professional</label>
+                                <input class="activityAdd" type="radio" id="amateur" name="activity" value="amateur">
+                                <label id="amateurLabel" for="amateur">amateur</label>
+                            </fieldset>
+                        </div>
+                    </section>
+
+                    <section class="sports">
+                        <label class="title">Practiced sports</label>
+                        <div>
+                            <input class="checkAdd" type="checkbox" id="running" name="running" value="running">
+                            <label for="running">running</label>
+                            <input class="checkAdd" type="checkbox" id="cycling" name="cycling" value="cycling">
+                            <label for="cycling">cycling</label>
+                            <input class="checkAdd" type="checkbox" id="swimming" name="swimming" value="swimming">
+                            <label for="swimming">swimming</label>
+                            <input class="checkAdd" type="checkbox" id="walking" name="walking" value="walking">
+                            <label for="walking">walking</label>
+                            <input class="checkAdd" type="checkbox" id="skiing" name="skiing" value="skiing">
+                            <label for="skiing">skiing</label>
+                        </div>
+                    </section>
+                    <button type="submit" id="addNewMemberButton">Save</button>
+                </form>
+            </section>
+
+
+            <section class="edit-member">
+                <button id="back">Back to </br>"Add new member"</button>
+                <h3>Edit member</h3>
+                <form target="_self" id="secForm">
+                    <section class="first-last">
+                        <div>
+                            <label for="fnameEdit">First name</label>
+                            <input autocomplete="off" required type="text" id="fnameEdit" name="fnameEdit">
+                        </div>
+                        <div>
+                            <label for="lnameEdit">Last name</label>
+                            <input autocomplete="off" required type="text" id="lnameEdit" name="lnameEdit">
+                        </div>
+                    </section>
+
+                    <section class="address first-last">
+                        <div>
+                            <label for="addressEdit">Address</label>
+                            <input autocomplete="off" required type="text" id="addressEdit" name="addressEdit">
+                        </div>
+
+                        <div>
+                            <label for="zipEdit">Zip code</label>
+                            <input autocomplete="off" required type="text" id="zipEdit" name="zipEdit">
+                        </div>
+
+                        <div>
+                            <label for="cityEdit">City</label>
+                            <input autocomplete="off" required type="text" id="cityEdit" name="cityEdit">
+                        </div>
+
+                        <div>
+                            <label for="countryEdit">Country</label>
+                            <input autocomplete="off" required type="text" id="countryEdit" name="countryEdit">
+                        </div>
+                    </section>
+
+                    <section class="gender-age first-last">
+                        <div>
+                            <label for="genderEdit">Gender</label>
+                            <select required id="genderEdit" name="genderEdit">
+                                <option value="" selected disabled hidden>Choose here</option>
+                                <option value="female">female</option>
+                                <option value="male">male</option>
+                                <option value="not specified">not specified</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="ageEdit">Age</label>
+                            <input autocomplete="off" required type="number" id="ageEdit" name="ageEdit">
+                        </div>
+
+                        <div>
+                            <label>Activity class</label>
+                            <fieldset>
+                                <input value='professional' class='activityEdit' type="radio" id="professionalEdit"
+                                    name="activity">
+                                <label id="professionalLabelEdit" for="professionalEdit">professional</label>
+                                <input value='amateur' class='activityEdit' type="radio" id="amateurEdit"
+                                    name="activity">
+                                <label id="amateurLabelEdit" for="amateurEdit">amateur</label>
+                            </fieldset>
+                        </div>
+                    </section>
+
+                    <section class="sports">
+                        <label class="title">Practiced sports</label>
+                        <div>
+                            <input class="checkEdit" type="checkbox" id="runningEdit" name="runningEdit"
+                                value="running">
+                            <label for="runningEdit">running</label>
+                            <input class="checkEdit" type="checkbox" id="cyclingEdit" name="cyclingEdit"
+                                value="cycling">
+                            <label for="cyclingEdit">cycling</label>
+                            <input class="checkEdit" type="checkbox" id="swimmingEdit" name="swimmingEdit"
+                                value="swimming">
+                            <label for="swimmingEdit">swimming</label>
+                            <input class="checkEdit" type="checkbox" id="walkingEdit" name="walkingEdit"
+                                value="walking">
+                            <label for="walkingEdit">walking</label>
+                            <input class="checkEdit" type="checkbox" id="skiingEdit" name="skiingEdit" value="skiing">
+                            <label for="skiingEdit">skiing</label>
+                        </div>
+                    </section>
+                    <button disabled class="uploadButton" type="submit">Update</button>
+                </form>
+            </section>
+
+            <footer>
+                <ul>
+                    <li><a href="/">Recent news</a></li>
+                    <li><a href="/">About Us</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact us</a></li>
+                </ul>
+            </footer>
+        </section>
+    </section>
+
+    <input class="hidden" type="text" />
+
+    <section class="confirm-background">
+        <div class="center">
+            <div>
+                <h5>Delete member</h5>
+            </div>
+            <p class="confirm-message"></p>
+            <div class="options">
+                <button class="no">No</button>
+                <button class="yes">Yes</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="delete.js"></script>
+    <script src="persons.js"></script>
+    <script src="addmember.js"></script>
+    <script src="edit.js"></script>
+    <script src="update.js"></script>
+    <script src="validate.js"></script>
+</body>
+
+</html>
